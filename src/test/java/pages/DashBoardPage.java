@@ -46,6 +46,17 @@ public class DashBoardPage {
     //Notification icon
     @FindBy (xpath = "//header[@id='header']/div/p/span")
     public WebElement notificationIcon;
+    // expiredNotificationBtn
+    @FindBy(xpath = "(//div/button)[9]")
+    public WebElement expiredBtn;
+    //remindersBtn
+    @FindBy(xpath = "(//div/button)[10]")
+    public WebElement remindersBtn;
+    //requestsBtn
+    @FindBy(xpath = "(//div/button)[11]")
+    public WebElement requestsBtn;
+
+
 
     /////////////////////////////////////////--ACCOUNT SETTINGS--///////////////////////////////////////////////////////
 
@@ -78,6 +89,8 @@ public class DashBoardPage {
     // LogOut Button
     @FindBy (xpath = "//div/button[.='Log out']")
     public WebElement confirmLogOutPopUp;
+
+
 
 
 

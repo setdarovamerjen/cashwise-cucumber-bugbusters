@@ -5,10 +5,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber", "json:target/report.json"},
+        plugin = {"html:target/cucumberTim.html", "json:target/reportTim.json"},
         features = "src/test/resources/features/tim_features",
         glue = "steps",
-        //tags = "@regression",
+        tags = "@loginTest",
         dryRun = true
 )
 public class TimRunner {
