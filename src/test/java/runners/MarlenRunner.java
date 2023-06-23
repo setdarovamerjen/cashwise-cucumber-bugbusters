@@ -5,11 +5,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber", "json:target/report.json"},
+        plugin = {"html:target/cucumber.html", "json:target/report.json"},
         features = "src/test/resources/features/marlen_features",
         glue = "steps",
-        //tags = "@regression",
-        dryRun = true
+        tags = "@AddClient",
+        dryRun = false
 )
 public class MarlenRunner {
 }
