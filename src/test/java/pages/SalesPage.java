@@ -52,4 +52,27 @@ public class SalesPage {
     @FindBy (xpath = "//button[.='Create invoice']")
     public WebElement createInvoiceBtn;
 
+    @FindBy(xpath = "//input[@name = 'invoice_title']")
+    public WebElement writeInvoiceNameInpt;
+    @FindBy(xpath = "//input[@id = 'react-select-5-input']")
+    public WebElement writeToWhomInpt;
+
+    @FindBy(xpath = "(//input[@placeholder = 'dd.mm.yy'])[2]")
+    public WebElement payUntilDateInpt;
+    @FindBy(xpath = "//button[@class = 'MuiButton-root MuiButton-BORDERED MuiButton-BORDEREDPrimary MuiButton-sizeMedium MuiButton-BORDEREDSizeMedium MuiButtonBase-root css-g7im2v']")
+    public WebElement selectProductBtn;
+
+    @FindBy(xpath = "//p[.='koma']")
+    public WebElement stringForProduct;
+
+    @FindBy(xpath = "//button[.='Save']")
+    public WebElement saveBtnInvoice;
+
+    @FindBy(xpath = "//button[.='Accept payment']/../../..")
+    public List<WebElement> invoices;
+
+    @FindBy(xpath = "//div[@class = 'sc-hAZoDl bmWOLM']")
+    public WebElement numberOfInv;
+
+
 }
