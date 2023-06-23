@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber", "json:target/report.json"},
         features = "src/test/resources/features/eldiyar_features",
         glue = "steps",
-        //tags = "@regression",
-        dryRun = true
+        tags = "@invoice",
+        dryRun = false
 )
 public class EldiyarRunner {
 }
