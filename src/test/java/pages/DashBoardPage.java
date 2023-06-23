@@ -45,17 +45,19 @@ public class DashBoardPage {
 
     //Notification icon
     @FindBy (xpath = "//header[@id='header']/div/p/span")
-    public WebElement notificationIcon;
+    public WebElement notificationIconBtn;
     // expiredNotificationBtn
+    @FindBy(xpath = "(//ul)[2]/div/div/div[1]//button")
+    public List<WebElement> notificationOptions;
+    //expiredBtn
     @FindBy(xpath = "(//div/button)[9]")
     public WebElement expiredBtn;
     //remindersBtn
     @FindBy(xpath = "(//div/button)[10]")
     public WebElement remindersBtn;
-    //requestsBtn
+    //requests
     @FindBy(xpath = "(//div/button)[11]")
     public WebElement requestsBtn;
-
 
 
     /////////////////////////////////////////--ACCOUNT SETTINGS--///////////////////////////////////////////////////////

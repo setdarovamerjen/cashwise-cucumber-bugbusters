@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberTim.html", "json:target/reportTim.json"},
         features = "src/test/resources/features/tim_features",
         glue = "steps",
-        tags = "@loginTest",
-        dryRun = true
+        tags ="@notifications",
+        dryRun = false
 )
 public class TimRunner {
 }
