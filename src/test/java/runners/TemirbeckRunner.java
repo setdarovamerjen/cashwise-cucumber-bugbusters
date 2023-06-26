@@ -5,11 +5,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber", "json:target/report.json"},
-        features = "src/test/resources/features/temirbeck_features",
+        plugin = {"html:target/cucumberTemirbek.html", "json:target/reportTemirbek.json"},
+        features = "src/test/resources/features.temirbek_features",
         glue = "steps",
-        //tags = "@regression",
-        dryRun = true
+        tags = "@addProductWithTheSameNameTwice",
+        dryRun = false
 )
 public class TemirbeckRunner {
+
 }
