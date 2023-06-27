@@ -75,4 +75,95 @@ public class SalesPage {
     public WebElement numberOfInv;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ///---================================================================
+
+
+
+
+    // =================================================================  Add product or service popup window =================================================================
+
+    @FindBy(xpath = "(//div[@role='button'])[4]")
+    public WebElement serviceType;
+
+
+    @FindBy(xpath = "//ul[@role='listbox']/li")
+    public List<WebElement> serviceTypeDropdown;
+
+
+    @FindBy(xpath = "(//div[@role='button'])[5]/..")
+    public WebElement category;
+
+
+    @FindBy (xpath = "//li[@role='option']")
+    public List<WebElement> categoryDropdown;
+
+
+
+    @FindBy (xpath = "(//input)[1]")
+    public WebElement nameInput;
+
+    @FindBy (xpath = "(//input)[2]")
+    public WebElement priceInput;
+
+    @FindBy (xpath = "(//input)[5]")
+    public WebElement descriptionInput;
+
+
+
+
+    @FindBy (xpath = "(//button/span)[9]")
+    public WebElement cancelBtn;
+
+
+    @FindBy (xpath = "(//button)[9]")
+    public WebElement saveBtn;
+
+
+
+    @FindBy (xpath = "//span[@class='item']")
+    public List<WebElement> namesOfItems;
+
+
+    @FindBy (xpath = "(//*[text()='teim'])")
+    public WebElement textFinder;
+
+    @FindBy (xpath = "//div[@role='alert']")
+    public WebElement alertMessage;
+
+
+
+
+    @FindBy (xpath = "//div[@type='MINI']")
+    public WebElement addProductsOrServicesPopupWindowForm;
+
 }
