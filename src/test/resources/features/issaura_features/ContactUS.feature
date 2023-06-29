@@ -1,4 +1,4 @@
-@regression @contact1
+@regression @contact1 @first_sprint
 
 Feature:Contact Us Form
 

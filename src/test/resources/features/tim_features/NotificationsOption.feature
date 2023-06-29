@@ -1,4 +1,4 @@
-@notifications @regression
+@notifications @regression @first_sprint
 Feature:Verify Notification Options on CashWise Webpage
 
   Background:

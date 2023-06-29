@@ -1,4 +1,4 @@
-@invoice
+@invoice @regression @first_sprint
 Feature:All tasks related to creating invoice functionality
 
   Background:

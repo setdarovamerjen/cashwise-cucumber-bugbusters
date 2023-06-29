@@ -66,6 +66,7 @@ public class ClientButtonSteps {
     public void user_must_see_added_client_on_client_page_first() {
         ApplicationFlow.pause(1000);
         String email1 = Driver.getDriver().findElement(By.xpath("//tbody/tr["+(salesPage_marlen.tableOfClients.size())+"]/td[6]")).getText();
+        ApplicationFlow.pause(1000);
         Assert.assertEquals("not equal" ,email1,email);
     }
 

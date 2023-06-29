@@ -1,4 +1,4 @@
-@AddClient
+@AddClient @regression @first_sprint
 Feature: Add Client button functionality
 
   Background:

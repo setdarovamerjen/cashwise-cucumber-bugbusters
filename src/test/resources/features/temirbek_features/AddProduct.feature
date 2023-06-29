@@ -1,4 +1,4 @@
-@addProduct
+@addProduct @regression @first_sprint
 Feature: User should be able to add new products or services in one place by filling out all required fields on that page.
 
   Background:
@@ -43,8 +43,8 @@ Feature: User should be able to add new products or services in one place by fil
     And User clicks on save button
     Then Validate that user should be able to see 'This name already exists' text
     Examples:
-      | name     | price | description |
-      | glassCup | 0     | whatever    |
+      | name      | price | description |
+      | ChjjshdupBobbb | 0     | whatever    |
 
 
 

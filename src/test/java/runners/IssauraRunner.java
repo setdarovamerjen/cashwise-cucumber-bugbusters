@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberissaura.html", "json:target/reportissaura.json"},
         features = "src/test/resources/features/issaura_features",
         glue ="steps",
-        tags ="@contact1",
+        //tags ="@contact1",
         dryRun =false
 
 )

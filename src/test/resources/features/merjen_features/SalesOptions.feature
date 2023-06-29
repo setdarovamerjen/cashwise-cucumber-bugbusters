@@ -1,3 +1,4 @@
+@regression @first_sprint
 Feature: Verify Sales Options on CashWise Webpage
 
   Background:

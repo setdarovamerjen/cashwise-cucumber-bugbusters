@@ -1,4 +1,4 @@
-@regression  @login1
+@regression  @login1 @first_sprint
 Feature: Sign in Functionality
 
   Background:

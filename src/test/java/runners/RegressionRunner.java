@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber", "json:target/report.json"},
+        plugin = {"html:target/cucumberRegression.html", "json:target/reportRegression.json"},
         features = "src/test/resources/features",
         glue = "steps",
-        //tags = "@regression",
+        tags = "@first_sprint",
         dryRun = false
 )
 public class RegressionRunner {
