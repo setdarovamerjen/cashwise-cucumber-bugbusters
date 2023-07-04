@@ -1,0 +1,12 @@
+Interview questions the words of Zhanar
+
+Can you give an example of a time when you identified a problem that others had missed? What did you do to resolve it?
+
+1. Vending machine, how would you test it?
+- You have to come up with your logic how would you test it.
+- 
+
+bug fixes can be different level
+- e.g add to card button is essential
+- it was working, if you go back, and go to the same page and come back, same button was not working.
+

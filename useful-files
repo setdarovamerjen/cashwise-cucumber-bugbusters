@@ -1,0 +1,86 @@
+#!/bin/bash
+# Rock, Paper, Scissors Game
+# Introduction
+echo "Welcome to the Rock, Paper, Scissors Game!"
+echo "Let's play!"
+echo
+# Variables
+choices=("rock" "paper" "scissors")
+player_score=0
+computer_score=0
+# Main game loop
+while true; do
+  # Display options
+  echo "Choose one of the following options:"
+  echo "1. Rock"
+  echo "2. Paper"
+  echo "3. Scissors"
+  echo "4. Quit"
+  # Prompt for player's choice
+  read -p "Enter your choice (1-4): " choice
+  # Validate the choice
+  if [[ ! $choice =~ ^[1-4]$ ]]; then
+    echo "Invalid input. Please enter a number between 1 and 4."
+    echo
+    continue
+  fi
+  # Quit the game
+  if ((choice == 4)); then
+    break
+  fi
+  # Calculate computer's choice
+  computer_choice=$((RANDOM % 3))
+  computer="${choices[$computer_choice]}"
+  # Determine the winner
+  case $choice in
+    1)
+      player="rock"
+      if [[ $computer == "rock" ]]; then
+        result="It's a tie!"
+      elif [[ $computer == "paper" ]]; then
+        result="Computer wins!"
+        ((computer_score++))
+      else
+        result="Player wins!"
+        ((player_score++))
+      fi
+      ;;
+    2)
+      player="paper"
+      if [[ $computer == "rock" ]]; then
+        result="Player wins!"
+        ((player_score++))
+      elif [[ $computer == "paper" ]]; then
+        result="It's a tie!"
+      else
+        result="Computer wins!"
+        ((computer_score++))
+      fi
+      ;;
+    3)
+      player="scissors"
+      if [[ $computer == "rock" ]]; then
+        result="Computer wins!"
+        ((computer_score++))
+      elif [[ $computer == "paper" ]]; then
+        result="Player wins!"
+        ((player_score++))
+      else
+        result="It's a tie!"
+      fi
+      ;;
+  esac
+  # Display the choices and result
+  echo
+  echo "Player: $player"
+  echo "Computer: $computer"
+  echo "$result"
+  echo
+done
+# Display the final scores
+echo "Final Scores:"
+echo "Player: $player_score"
+echo "Computer: $computer_score"
+echo
+# Thank you message
+echo "Thank you for playing Rock, Paper, Scissors!"
