@@ -1,0 +1,3 @@
+Switching between branches:
+1. git branch --> shows the list of branches
+2. git checkout <name of the branch> --> switches to another branch
