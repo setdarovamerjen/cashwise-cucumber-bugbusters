@@ -82,4 +82,13 @@ public class SalesPage_Marlen {
     )
     public WebElement submitButton;
 
+
+    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
+    public WebElement chooseAllClients;
+
+    @FindBy(xpath = "//button[.='Archive']")
+    public WebElement archiveButton;
+
+    @FindBy(xpath = "//*[contains(text(), 'Active ')]")
+    public WebElement activeCategorieButton;
 }
