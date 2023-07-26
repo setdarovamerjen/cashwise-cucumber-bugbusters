@@ -85,7 +85,6 @@ public class CreateInvoice {
         int invoiceNumbInt = Integer.parseInt(invoiceNumb);
         for (WebElement  element: salesPage.invoices){
 
-
             Assert.assertEquals(invoiceNumbInt,salesPage.invoices.size());
         }
 

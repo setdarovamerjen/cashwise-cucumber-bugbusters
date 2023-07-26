@@ -74,6 +74,19 @@ public class SalesPage {
     @FindBy(xpath = "//div[@class = 'sc-hAZoDl bmWOLM']")
     public WebElement numberOfInv;
 
+    @FindBy(xpath = "(//input[@class = 'PrivateSwitchBase-input css-1m9pwf3'])[3]")
+    public WebElement checkBoxInClients;
+
+    @FindBy(xpath = "//button[. ='Archive']")
+    public WebElement archiveBtn;
+
+    @FindBy(xpath = "//a[@aria-selected ='false']")
+    public WebElement archivedFolder;
+
+    @FindBy(xpath = "//a[@aria-selected ='true']")
+    public WebElement activeFolder;
+
+
 
 
 
