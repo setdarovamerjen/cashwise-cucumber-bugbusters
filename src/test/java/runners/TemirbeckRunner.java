@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumberTem.html", "json:target/reportTem.json"},
         features = "src/test/resources/features/temirbek_features",
         glue = "steps",
-        tags = "@addProduct",
+        tags = "@temirbek",
         dryRun = false
 )
 public class TemirbeckRunner {

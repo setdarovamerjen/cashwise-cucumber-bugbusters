@@ -160,10 +160,16 @@ public class SalesPage {
     @FindBy (xpath = "//div[@role='alert']")
     public WebElement alertMessage;
 
-
-
-
     @FindBy (xpath = "//div[@type='MINI']")
     public WebElement addProductsOrServicesPopupWindowForm;
+
+
+    //------------------------------------------ editing the product in sales add product and services page
+
+    @FindBy (xpath = "(//main/div/div/table/tbody/tr/td[6]/div/button[1])")
+    public List<WebElement> editIconList;
+
+    @FindBy (xpath = "//button[@type='submit']")
+    public WebElement saveButton2;
 
 }
